@@ -31,4 +31,4 @@ The four Algorithms above are implemented in the languages:
    2. Go (prime.go)
    3. C/C++ (primes.c / primes.cpp)
 
-The c/c++ and go files will be updated soon
+The c and go files will be updated soon enough
