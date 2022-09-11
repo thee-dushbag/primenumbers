@@ -21,7 +21,7 @@ There are for functions:
     
   4. get_primes_half_primes_found
     Consider the number 63, if we were to test the number, we find that it will be divided by
-    1, 3, 7, and 9. Mathematically, if a number a can be divided by b abd c, and b can be divided
+    1, 3, 7, and 9. Mathematically, if a number a can be divided by b and c, and b can be divided
     by d and e, then a can be divided by b, c, d and e. therefore, a number is prime if all the
     prime numbers less than half of it, cannot divide the number without a remainder. This thus
     reduses the numbers we test hence reducing the time it takes to generate q prime numbers
@@ -31,4 +31,7 @@ The four Algorithms above are implemented in the languages:
    2. Go (prime.go)
    3. C/C++ (primes.c / primes.cpp)
 
-The c and go files will be updated soon enough
+By Far c function version 4 above is the fastest while python  function version 1 is the slowest
+The statistic will be uploaded soon.
+
+The go files will be updated soon enough
