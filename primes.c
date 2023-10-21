@@ -7,10 +7,17 @@
 #include "depc/mystr.h"
 #include "depc/util.h"
 #include "depc/primefunctions.h"
+#include <string.h>
+#include <ctype.h>
 
-int main()
+int main(int argc, char **argv)
 {
-    int q = 20000;
+    if (argc != 2) {
+        printf("Syntax: %s <number>\n", argv[0]);
+        return 1;
+    }
+    int q = atoi(argv[1]);
+    // int q = 20000;
     int store[q];
     struct bundle bud[5];
     bud[0].func = &get_primes_all;

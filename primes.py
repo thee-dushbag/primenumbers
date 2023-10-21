@@ -4,6 +4,7 @@
 from math import floor
 from time import time
 from typing import Any, Callable
+from sys import argv
 
 
 class Log:
@@ -129,11 +130,15 @@ def speedtest(functions: dict):
 
 
 if __name__ == "__main__":
+    if len(argv) != 2:
+        print(f'Syntax: {argv[0]} <number>')
+        exit(1)
+    q = int(argv[1])
     speedtest(
         {
-            get_primes_all: (100,),
-            get_primes_odd: (100,),
-            get_primes_half_odd: (100,),
-            get_primes_half_primes_found: (100,),
+            get_primes_all: (q,),
+            get_primes_odd: (q,),
+            get_primes_half_odd: (q,),
+            get_primes_half_primes_found: (q,),
         }
     )
